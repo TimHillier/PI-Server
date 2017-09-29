@@ -1,13 +1,34 @@
 <html>
+    <!--VERSION 0.0.2 9-28-17-->
 <head>
     <link rel = "stylesheet" href=" index.css">
-<body>
+    <script type = "text/javascript">
+        function load()
+        {
+            var video = randomVideo();// "B9FzVhw8_bY"
+            document.getElementById('youtube').src ="https://www.youtube.com/embed/"+ video +"?autoplay=1&loop=1"  
+        }
+        
+        function randomVideo()
+        {
+            var array = ["B9FzVhw8_bY", "mWIqmXn3Yyk","cfNW1ERej0A","KZjK5n0WnKE"];
+            var max = array.length; 
+            var min = 0; 
+            return array[Math.floor(Math.random()*max)];
+            
+        }
+
+                
+    </script>
+    
+    <script type="text/javascript">
+    </script>
+<body onload="load()">
     <p>
-        Git Success!!! :D
     </p>
     
     <div class="centered-thing">
-    <iframe width="1900" height="1235" src="https://www.youtube.com/embed/cfNW1ERej0A?autoplay=1" align ="middle" frameborder="0" allowfullscreen></iframe> <!-- temp vidoe -->
+    <iframe id="youtube" width="1900" height="1235" src="lego.com" align ="middle" frameborder="0" allowfullscreen></iframe> <!-- temp vidoe -->
     </div>
         </body>
 </head>
